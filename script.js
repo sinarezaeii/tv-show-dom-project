@@ -1,3 +1,4 @@
+relod:
 function setup() {
     getShowsData("https://api.tvmaze.com/shows/82/episodes", (Shows) => {
         appendToOptionShows(Shows);
@@ -71,9 +72,8 @@ function appendToTheSelect(objectValues) {
     let option = document.createElement("option");
     const getele2= document.querySelector(".episodes")
     getele2.addEventListener("change",function(){
-      if (getele2.value=="allEpisodes"){
-      const getele3= document.querySelectorAll(".cards")
-      getele3.classList.remove
+      if (getele2.value=="all-episods"){
+      window.location.reload();
     }
     })
   
